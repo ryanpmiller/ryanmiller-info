@@ -3,22 +3,15 @@ import { Image } from 'react-bootstrap';
 
 // Dumb component
 export default class Project extends Component {
-	createMarkup(html) {
-		return {
-			__html: html
-		};
-	}
-
 	render() {
-		const { post } = this.props;
-		const projectLink = post.acf.link;
+		const projectLink = '404.html';
 		/* eslint no-use-before-define: 0, no-undef: 0 */
 		const trackGa = () => ga('send', 'event', 'Project Details', 'Click', projectLink);
 
 		return (
 			<div>
 				<header>
-					<h1 className="entry-title">{post.title.rendered}</h1>
+					<h1 className="entry-title">Project Title</h1>
 				</header>
 				<div className="entry-content">
 					<div className="row">
@@ -29,7 +22,7 @@ export default class Project extends Component {
 									target="_blank"
 									onClick={trackGa}
 								>
-									<Image src={post.acf.project_image} responsive />
+									<Image src="#" responsive />
 								</a>
 							</div>
 						</div>
@@ -48,11 +41,15 @@ export default class Project extends Component {
 								>Live demo&nbsp;&nbsp;<i className="glyphicon glyphicon-share-alt" />
 								</a>
 							</h3>
-							<div dangerouslySetInnerHTML={this.createMarkup(post.acf.project_description)} />
+							<div>
+								Project Description
+							</div>
 						</div>
 						<div className="col-sm-3">
 							<h3>Project Requirements</h3>
-							<div dangerouslySetInnerHTML={this.createMarkup(post.acf.project_credentials)} />
+							<div>
+								Project Specs
+							</div>
 						</div>
 					</div>
 				</div>
@@ -60,7 +57,3 @@ export default class Project extends Component {
 		);
 	}
 }
-
-Project.propTypes = {
-	post: React.PropTypes.object.isRequired
-};

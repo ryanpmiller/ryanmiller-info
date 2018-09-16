@@ -4,15 +4,8 @@ import { Image, Button } from 'react-bootstrap';
 import './ProjectMedium.scss';
 
 export default class ProjectMedium extends Component {
-	createMarkup(html) {
-		return {
-			__html: html
-		};
-	}
-
 	render() {
-		const { post, page } = this.props;
-		const projectLink = post.acf.link;
+		const { page } = this.props;
 		/* eslint no-use-before-define: 0, no-undef: 0 */
 		const trackGa = () => ga('send', 'event', 'Project Details', 'Click', projectLink);
 		const columnClasses = ['col-lg-6', 'pb-5'];
@@ -21,17 +14,21 @@ export default class ProjectMedium extends Component {
 				<div className="row">
 					<div className="col-lg-12">
 						<h6>Technologies</h6>
-						<div className="project-specs" dangerouslySetInnerHTML={this.createMarkup(post.acf.project_credentials)} />
+						<div className="project-specs">
+							Project Specs
+						</div>
 					</div>
 				</div>
 			)
 			: null;
 		const colOne = (
 			<div className={columnClasses.join(' ')}>
-				<h3>{post.title.rendered}</h3>
-				<div dangerouslySetInnerHTML={this.createMarkup(post.acf.project_description)} />
+				<h3>Project Title</h3>
+				<div>
+					Project Description
+				</div>
 				<Button
-					href={projectLink}
+					href="404.html"
 					bsStyle="primary"
 					bsSize="xs"
 					target="_blank"
@@ -47,7 +44,7 @@ export default class ProjectMedium extends Component {
 					target="_blank"
 					onClick={trackGa}
 				>
-					<Image src={post.acf.project_image} responsive />
+					<Image src="#" responsive />
 				</a>
 			</div>
 		);
@@ -83,7 +80,6 @@ export default class ProjectMedium extends Component {
 }
 
 ProjectMedium.propTypes = {
-	post: React.PropTypes.object.isRequired,
 	index: React.PropTypes.number.isRequired,
 	page: React.PropTypes.bool,
 };
