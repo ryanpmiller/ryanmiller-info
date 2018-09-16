@@ -1,0 +1,9 @@
+export const WP_URL = '//api.rleafey.com/wp-json/wp/v2';
+export const RECEIVE_PAGE = 'RECEIVE_PAGE';
+export const RECEIVE_POSTS = 'RECEIVE_POSTS';
+export const SET_HEADER = 'SET_HEADER';
+export const GET_NAVIGATION = 'GET_NAVIGATION';
+export const TOGGLE_MENU = 'TOGGLE_MENU';
+export const GET_FOOTER = 'GET_FOOTER';
+export const LOADING = 'LOADING';
+export const LOADED = 'LOADED';
