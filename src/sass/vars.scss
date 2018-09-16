@@ -1,0 +1,28 @@
+//colors
+$dark_grey: #272932;
+$brand-primary: darken(deepskyblue, 15%); //lightseagreen;
+$brand-secondary: #ff8100;//#FF7D21;
+$brand-hightlight-secondary: orange;
+$brand-highlight: lighten($brand-primary, 5%);
+$white: white;
+$white_10: rgba(255, 255, 255, 0.1);
+$grey: #ececec;
+$white_70: rgba(255, 255, 255, 0.7);
+$black: #000;
+
+$stars: #f1c40f;
+$brand-primary_75: rgba($brand-primary, 0.75);
+$color_bon_jour_approx: #e1e1e1;
+$brand-primary_50: rgba($brand-primary, 0.5);
+
+$homeBg: $brand-primary;
+$projectsBg:  $brand-secondary; //linear-gradient(45deg, darken($brand-primary, 5%), lighten($brand-primary, 25%));
+$contactMeBg: #4F6D7A;//#AD343E;
+
+//fonts
+$font_0: Roboto;
+$font_1: Helvetica Neue;
+$font_2: Helvetica;
+$font_3: Arial;
+$font_4: sans-serif;
+$font_5: Raleway;

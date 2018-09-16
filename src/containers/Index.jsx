@@ -50,8 +50,3 @@ Index.propTypes = {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Index);
-
-
-
-// WEBPACK FOOTER //
-// ./src/containers/Index.jsx

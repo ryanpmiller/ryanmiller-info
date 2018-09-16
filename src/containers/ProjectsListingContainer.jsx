@@ -12,8 +12,3 @@ class ProjectsListingContainer extends Component {
 }
 
 export default (ProjectsListingContainer);
-
-
-
-// WEBPACK FOOTER //
-// ./src/containers/ProjectsListingContainer.jsx

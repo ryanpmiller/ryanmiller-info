@@ -84,8 +84,3 @@ MainNavigation.propTypes = {
 	navigation: React.PropTypes.object,
 	onMenuClick: React.PropTypes.func,
 };
-
-
-
-// WEBPACK FOOTER //
-// ./src/components/MainNavigation.jsx

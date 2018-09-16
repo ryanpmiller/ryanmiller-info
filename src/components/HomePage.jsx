@@ -140,8 +140,3 @@ export default class HomePage extends Component {
 		);
 	}
 }
-
-
-
-// WEBPACK FOOTER //
-// ./src/components/HomePage.jsx

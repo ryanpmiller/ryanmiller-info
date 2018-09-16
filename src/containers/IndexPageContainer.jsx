@@ -51,9 +51,3 @@ export default connect(
 	mapStateToProps,
 	mapDispatchToProps
 )(IndexPageContainer);
-
-
-
-
-// WEBPACK FOOTER //
-// ./src/containers/IndexPageContainer.jsx

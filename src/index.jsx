@@ -10,9 +10,9 @@ import Index from './containers/Index';
 import IndexPageContainer from './containers/IndexPageContainer';
 import ProjectsPageContainer from './containers/ProjectsPageContainer';
 import ContactPageContainer from './containers/ContactPageContainer';
-import '../sass/fonts.css';
-import '../sass/bootstrap.css';
-import '../sass/base.scss';
+import './css/fonts.css';
+import './css/bootstrap.css';
+import './sass/base.scss';
 
 // const history = new createBrowserHistory();
 const store = configureStore();

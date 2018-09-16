@@ -50,9 +50,3 @@ export default connect(
 	mapStateToProps,
 	mapDispatchToProps
 )(ContactPageContainer);
-
-
-
-
-// WEBPACK FOOTER //
-// ./src/containers/ContactPageContainer.jsx

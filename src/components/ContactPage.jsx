@@ -34,8 +34,3 @@ export default class ContactPage extends Component {
 		);
 	}
 }
-
-
-
-// WEBPACK FOOTER //
-// ./src/components/ContactPage.jsx

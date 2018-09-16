@@ -22,7 +22,7 @@ export default class Footer extends Component {
 									</a>.
 								</p>
 								<p className="social-links">
-									<a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+									<a href="https://twitter.com/ryanpmiller1" target="_blank" rel="noopener noreferrer">
 										<i className="fa fa-twitter" />
 									</a>
 									<a href="https://linkedin.com/in/web-dev-ryan-miller" target="_blank" rel="noopener noreferrer">
@@ -49,8 +49,3 @@ export default class Footer extends Component {
 		);
 	}
 }
-
-
-
-// WEBPACK FOOTER //
-// ./src/components/Footer.jsx
